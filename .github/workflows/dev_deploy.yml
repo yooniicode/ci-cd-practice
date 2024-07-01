@@ -12,7 +12,7 @@ jobs:
 
     runs-on: ubuntu-latest  # 우분투 최신 버전으로 실행
 
-    strategy:
+-i    strategy:
       matrix:
         node-version: ['18.x']  # 노드 버전 지정! 여러 개도 가능! ['18.x', '14.x'] 요렇게
 
