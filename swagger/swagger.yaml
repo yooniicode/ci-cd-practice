@@ -6,7 +6,7 @@ paths:
       summary: Root
       responses:
         '200':
-          description: 성공으로 상태 변화 성공!
+          description: 성공으로 상태 변화 !
           schema:
             type: object
             properties:
