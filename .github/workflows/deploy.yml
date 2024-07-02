@@ -3,7 +3,7 @@ name: Node.js Dev CI/CD
 on:
   pull_request:      # pull request -> merge 가 되었을 때 Github Action 실행!
     types: [ closed ]
-  workflow_dispatch: {}# 수동 실행도 가능하도록 함
+  workflow_dispatch: # 수동 실행도 가능하도록 함
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       matrix:
         node-version: ['18.x']  # 노드 버전 지정! 여러 개도 가능! ['18.x', '14.x'] 요렇게
 
-      steps:
+    steps:
       # build 할 코드를 가져옴 (코드 checkout - github에서 제공해주는 checkout@v3 사용)
       - name: Checkout
         uses: actions/checkout@v3
